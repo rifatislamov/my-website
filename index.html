@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Paradise Comfort - Магазин матрасов</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/script.js"></script>
+</head>
+<body>
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header-flex">
+      <a href="#" class="logo">Paradise Comfort</a>
+
+      <!-- Меню + корзина -->
+      <div class="header-right" id="navMenu">
+        <ul class="header-nav">
+          <li><a href="#categories" class="header-nav__link">Категории</a></li>
+          <li><a href="#catalog" class="header-nav__link">Каталог</a></li>
+          <li><a href="#contacts" class="header-nav__link">Контакты</a></li>
+        </ul>
+        <div class="search-box">
+  <input type="text" id="search" placeholder="Поиск товаров...">
+</div>
+        <!-- кнопка корзины -->
+        <button id="open-cart">
+          Корзина <span class="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Плавающая кнопка корзины -->
+  <button id="fab-cart">
+    🛒 <span class="cart-count">0</span>
+  </button>
+
+  <!-- Фильтры -->
+  <div class="filters">
+    <select id="sort">
+      <option value="">Сортировать...</option>
+      <option value="cheap">Цена ↑</option>
+      <option value="expensive">Цена ↓</option>
+    </select>
+    <input type="text" id="search" placeholder="Поиск по названию...">
+  </div>
+
+  <!-- Модальное окно корзины -->
+  <div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="close-cart">&times;</span>
+      <h2>Корзина</h2>
+      <div id="cart-items"></div>
+
+      <label for="delivery">Доставка:</label>
+      <select id="delivery">
+        <option value="0">Самовывоз — 0 тг</option>
+        <option value="2000">Алматы — 2000 тг</option>
+        <option value="3000">Астана — 3000 тг</option>
+      </select>
+
+      <p id="cart-total">Итого: 0 тг</p>
+      <div class="cart-buttons">
+        <button id="clear-cart">Очистить</button>
+        <button id="checkout">Оформить заказ</button>
+      </div>
+
+      <div id="checkout-form" style="display:none;">
+        <h3>Оформление заказа</h3>
+        <input type="text" placeholder="Имя">
+        <input type="tel" placeholder="Телефон">
+        <textarea placeholder="Адрес"></textarea>
+        <button>Отправить заказ</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Категории -->
+  <section id="categories" class="categories">
+  <h2 class="section-title">Категории матрасов</h2>
+  <div class="category-grid">
+
+    <div class="category-card">
+      <img src="images/zav.jpg" alt="Зависимый пружинный блок">
+      <h3>Зависимый пружинный блок</h3>
+      <ul>
+        <li class="plus">Самый дешевый пружинный матрас</li>
+        <li class="plus">Выдерживает большую нагрузку</li>
+        <li class="minus">Прогибается в сторону более тяжёлого человека</li>
+        <li class="minus">Со временем может скрипеть</li>
+        <li class="minus">Ортопедический эффект минимален</li>
+      </ul>
+    </div>
+
+    <div class="category-card">
+      <img src="images/nezav.jpg" alt="Независимый пружинный блок">
+      <h3>Независимый пружинный блок</h3>
+      <ul>
+        <li class="plus">Высокий ортопедический эффект</li>
+        <li class="plus">Каждая пружина работает отдельно</li>
+        <li class="plus">Пружины в отдельных кармашках, поэтому не скрипят</li>
+        <li class="plus">Долговечный и надёжный</li>
+      </ul>
+    </div>
+
+    <div class="category-card">
+      <img src="images/bez.jpg" alt="Беспружинный матрас">
+      <h3>Беспружинный матрас</h3>
+      <ul>
+        <li class="plus">Тихий (не скрипит)</li>
+        <li class="plus">Ортопедический эффект - средний</li>
+        <li class="plus">Равномерная поддержка тела</li>
+        <li class="plus">Способен выдерживать большой вес</li>
+         <li class="minus">Хороший беспружинный матрас много весит</li>
+         <li class="minus">В отличии от пружинных матрасов, слабее пропускает воздух</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Каталог -->
+  <section id="catalog" class="catalog">
+    <h2>Каталог</h2>
+    <div class="products" id="product-list">
+      <!-- Карточки генерируются через JS -->
+    </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contacts" class="contacts">
+    <h2>Контакты</h2>
+    <p>Телефон: +7 (777) 123-45-67</p>
+    <p>Email: info@paradisecomfort.kz</p>
+    <p>Адрес: г. Алматы, ул. Абая, 25</p>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 Paradise Comfort</p>
+  </footer>
+</body>
+</html>
