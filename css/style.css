@@ -9,9 +9,7 @@ body {
 
 a {
   text-decoration: none;
-
 }
-
 
 html {
   scroll-behavior: smooth;
@@ -42,9 +40,8 @@ html {
   justify-content: space-between;
 }
 
-
 .logo {
-  font-family: "Abril Fatface",Regular;
+  font-family: "Abril Fatface", Regular;
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
@@ -73,6 +70,7 @@ html {
   border-radius: 6px;
   transition: 0.3s;
 }
+
 .header-nav__link:hover {
   background: rgba(255,255,255,0.1);
   color: #ffffff;
@@ -91,6 +89,7 @@ html {
   transition: 0.3s ease;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
+
 #open-cart::before {
   content: "🛒";
   position: absolute;
@@ -99,6 +98,7 @@ html {
   transform: translateY(-50%);
   font-size: 18px;
 }
+
 .cart-count {
   position: absolute;
   top: -4px;
@@ -112,6 +112,7 @@ html {
   line-height: 1;
   box-shadow: 0 0 6px rgba(0,0,0,0.3);
 }
+
 #open-cart:hover {
   background: #019870;
   transform: scale(1.05);
@@ -132,15 +133,18 @@ html {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   z-index: 2000;
 }
-#fab-cart:hover { background: #019870; }
+
+#fab-cart:hover {
+  background: #019870;
+}
 
 /* ---------- Товары ---------- */
 .product img {
-  width: 100%;          
-  height: 200px;         
-  object-fit: cover;    
-  border-radius: 10px;   
-  margin-bottom: 10px; 
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .products {
@@ -148,6 +152,7 @@ html {
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
   gap: 25px;
 }
+
 .product {
   background: #ffffff;
   border-radius: 12px;
@@ -157,19 +162,23 @@ html {
   transition: 0.3s ease;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
+
 .product:hover {
   transform: translateY(-6px);
   box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
+
 .product h3 {
   margin: 10px 0;
   font-size: 18px;
 }
+
 .price {
   color: #413737;
   font-weight: bold;
   font-size: 18px;
 }
+
 .add-to-cart {
   background: #0d7760;
   color: white;
@@ -181,10 +190,12 @@ html {
   font-weight: 500;
   transition: 0.3s;
 }
+
 .add-to-cart:hover {
   background: #019870;
   transform: scale(1.05);
 }
+
 ul {
   list-style: none;
   padding: 0;
@@ -209,22 +220,26 @@ li.minus::before {
   margin-bottom: 20px;
   color: #ffffff;
 }
+
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 80px;       
+  height: 80px;
   z-index: 1000;
 }
+
 .categories {
-  margin-top: 100px;  
+  margin-top: 100px;
 }
+
 .category-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 25px;
 }
+
 .category-card {
   background: #ffffff;
   border-radius: 12px;
@@ -233,10 +248,12 @@ header {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   text-align: left;
 }
+
 .category-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0,0,0,0.3);
 }
+
 .category-card img {
   width: 100%;
   height: 200px;
@@ -244,16 +261,19 @@ header {
   border-radius: 10px;
   margin-bottom: 15px;
 }
+
 .category-card h3 {
   font-size: 22px;
   color: #0d7760;
   margin-bottom: 10px;
 }
+
 .category-card ul {
   list-style: none;
   padding: 0;
   margin: 0;
 }
+
 .category-card ul li {
   margin-bottom: 6px;
   padding-left: 18px;
@@ -275,6 +295,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .modal-content {
   background: #000000;
   padding: 25px;
@@ -287,6 +308,7 @@ header {
   animation: fadeIn 0.3s ease-in-out;
   color: #fffcfc;
 }
+
 .close {
   float: right;
   font-size: 24px;
@@ -294,15 +316,18 @@ header {
   color: #ffffff;
   transition: 0.2s;
 }
+
 .close:hover {
   color: #000000;
 }
+
 .cart-item {
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(168, 166, 166, 0.3);
   padding: 12px 0;
 }
+
 .cart-item img {
   width: 80px;
   height: 60px;
@@ -311,14 +336,17 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.3);
   margin-right: 12px;
 }
+
 .cart-item-info {
   flex: 1;
 }
+
 .cart-buttons {
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
+
 .empty-cart {
   text-align: center;
   font-size: 16px;
@@ -340,6 +368,7 @@ header {
   transition: 0.3s;
   z-index: 3000;
 }
+
 .notification.show {
   opacity: 1;
   transform: translateY(0);
@@ -354,6 +383,7 @@ header {
   margin-top: 40px;
   border-top: 2px solid rgba(255,255,255,0.2);
 }
+
 .search-box {
   margin-left: 20px;
 }
@@ -368,6 +398,12 @@ header {
 
 /* ---------- Анимация ---------- */
 @keyframes fadeIn {
-  from {opacity: 0; transform: scale(0.9);}
-  to {opacity: 1; transform: scale(1);}
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
